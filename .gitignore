@@ -4,14 +4,8 @@ __pycache__/
 *.log
 
 ".venv/" 
-".venv/" 
-=======
-".venv/" 
->>>>>>> b1680668 (Removed .venv from Git tracking)
 =======
 .venv/
 __pycache__/
 *.log
-
->>>>>>> 1d1079f2 (Updated .gitignore to exclude .venv)
-
+>>>>>>> bf7d4b42 (Removed .venv and updated .gitignore)
