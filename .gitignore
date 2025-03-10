@@ -9,3 +9,4 @@ __pycache__/
 __pycache__/
 *.log
 >>>>>>> bf7d4b42 (Removed .venv and updated .gitignore)
+"wheat_disease_fixed.h5" 
