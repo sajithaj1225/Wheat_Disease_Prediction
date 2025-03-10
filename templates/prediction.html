@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,3 +33,39 @@
     <a href="/">Back to Home</a> -->
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict - Wheat Disease</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/predict">Prediction</a>
+        <a href="/resource">Resources</a>
+    </nav>
+    <h1>Wheat Disease Prediction</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+        <label for="file">Upload an image:</label>
+        <input type="file" name="file" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+        <img src="{{ img_path }}" alt="Uploaded Image" width="300">
+    {% endif %}
+
+    <!-- <br>
+    <a href="/">Back to Home</a> -->
+</body>
+</html>
+>>>>>>> eac82a6a (Initial commit)
